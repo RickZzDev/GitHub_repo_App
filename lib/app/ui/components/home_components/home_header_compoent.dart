@@ -12,7 +12,7 @@ class HomeHeader extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: MediaQuery.of(context).size.height * 0.2,
-      padding: EdgeInsets.symmetric(vertical: 8),
+      // padding: EdgeInsets.only(top: 4),
       decoration: BoxDecoration(),
       child: Container(
         child: ChatAnimatedMessage(

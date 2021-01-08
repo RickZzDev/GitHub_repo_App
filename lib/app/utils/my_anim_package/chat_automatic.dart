@@ -88,7 +88,7 @@ class _ChatAnimatedMessageState extends State<ChatAnimatedMessage>
     final size2 = 13.0 - 5.0 * _breathe2;
     final size3 = 11.0 - 5.0 * _breathe3;
     return Container(
-      padding: EdgeInsets.only(top: 8, bottom: 8, left: 12, right: 24),
+      padding: EdgeInsets.only(top: 0, bottom: 0, left: 12, right: 24),
       // alignment: Alignment.centerRight,
       constraints:
           BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.7),
@@ -144,7 +144,7 @@ class _ChatAnimatedMessageState extends State<ChatAnimatedMessage>
                 textAlign: TextAlign.start,
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 24,
+                    fontSize: 22,
                     fontFamily: "",
                     fontWeight: FontWeight.w500)),
       ),
