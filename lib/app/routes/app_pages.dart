@@ -13,7 +13,7 @@ class AppPages {
     GetPage(
       name: Routes.HOME,
       binding: HomeBinding(),
-      transition: Transition.cupertino,
+      // transition: Transition.cupertino,
       page: () => HomeView(),
     )
   ];

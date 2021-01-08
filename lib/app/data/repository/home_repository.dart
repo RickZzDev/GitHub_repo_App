@@ -7,6 +7,8 @@ class HomeRepository {
   HomeRepository({@required this.apiClient}) : assert(apiClient != null);
 
   getRepos() {
+    //Descomente essa linha e comente a de baixo para ver o comportamento da teal ao receber uma Exception
+    // return throw Exception();
     return apiClient.getRepos();
   }
 }

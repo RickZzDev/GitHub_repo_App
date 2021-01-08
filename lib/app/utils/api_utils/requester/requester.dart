@@ -9,20 +9,6 @@ import 'package:ambar_test/app/utils/api_utils/headers/headers.dart';
 class Requester {
   Map basicHeaders = Headers.getBasicHeader();
 
-  post({String url, dynamic body, Map header}) async {
-    try {
-      var response = await http.post(url,
-          headers: header == null ? basicHeaders : header,
-          body: jsonEncode(body));
-
-      verifyStatusCode(response);
-
-      return response;
-    } catch (e) {
-      return e;
-    }
-  }
-
   fetch({@required String url, Map header}) async {
     try {
       var response =

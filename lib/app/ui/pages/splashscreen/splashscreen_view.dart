@@ -66,21 +66,32 @@ class _SplashScreenViewState extends State<SplashScreenView>
         children: [
           SplashScreen(
             backgroundColor: Colors.indigo[600],
-            seconds: 1,
+            seconds: 4,
             navigateAfterSeconds: Routes.HOME,
             routeName: "/splash",
             loaderColor: Colors.transparent,
           ),
           Center(
-            child: AnimatedOpacity(
-              duration: Duration(milliseconds: 700),
-              opacity: animValue,
+            child: Hero(
+              tag: 'hero',
               child: Container(
                 width: MediaQuery.of(context).size.width / 2,
                 child: Lottie.asset('assets/animations/splash_anim.json'),
               ),
             ),
-          )
+          ),
+          // Center(
+          //   child: AnimatedOpacity(
+          //     duration: Duration(milliseconds: 700),
+          //     opacity: animValue,
+          //     child: Container(
+          //       width: MediaQuery.of(context).size.width / 2,
+          //       child: Hero(
+          //           tag: "gitLottie",
+          //           child: Lottie.asset('assets/animations/splash_anim.json')),
+          //     ),
+          //   ),
+          // )
         ],
       ),
     );
