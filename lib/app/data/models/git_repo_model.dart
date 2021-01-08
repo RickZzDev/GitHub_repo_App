@@ -15,15 +15,17 @@ class GitRepoModel {
   });
 
   List<GitRepoModel> fromJson(List<dynamic> list) {
-    for (var repo in list) {
+    for (var i = 0; i < 100; i++) {
       repos.add(
         GitRepoModel(
-            name: repo['name'],
-            htmlUrl: repo['html_url'],
-            owner:
-                repo['owner'] != null ? Owner.fromJson(repo['owner']) : null),
+            name: list[i]['name'],
+            htmlUrl: list[i]['html_url'],
+            owner: list[i]['owner'] != null
+                ? Owner.fromJson(list[i]['owner'])
+                : null),
       );
     }
+
     return repos;
   }
 
