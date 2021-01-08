@@ -64,8 +64,7 @@ class _HomeViewState extends State<HomeView> {
                             ? ListViewRepo(
                                 controller: _controller,
                               )
-                            : !snapshotRequest.hasError ||
-                                    _controller.loading.value
+                            : _controller.verifyErrorAndLoading(snapshotRequest)
                                 ? ListViewShimmer()
                                 : ListViewError(),
                       ),

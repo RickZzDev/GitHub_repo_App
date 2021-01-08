@@ -3,7 +3,6 @@ import 'package:ambar_test/app/data/provider/home_provider.dart';
 import 'package:ambar_test/app/data/repository/home_repository.dart';
 import 'package:ambar_test/app/utils/api_utils/requester/requester.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
 
 class HomeBinding implements Bindings {
   @override

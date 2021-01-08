@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:ambar_test/app/data/models/git_repo_model.dart';
 import 'package:ambar_test/app/data/repository/home_repository.dart';
-import 'package:ambar_test/app/utils/api_utils/exception_utils/exception_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:meta/meta.dart';
