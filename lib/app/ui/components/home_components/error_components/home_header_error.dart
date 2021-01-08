@@ -14,7 +14,7 @@ class HomeHeaderError extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.2,
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: Colors.blueAccent,
+        color: Theme.of(context).primaryColor,
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(20),
           bottomRight: Radius.circular(20),

@@ -25,7 +25,7 @@ class _HomeViewState extends State<HomeView> {
     Future<double> height = Future<double>.value(screenHeigthSize * 0.75);
 
     return Scaffold(
-      backgroundColor: Colors.blueAccent,
+      backgroundColor: Theme.of(context).primaryColor,
       body: SafeArea(
         child: Obx(
           () => RefreshIndicator(

@@ -151,10 +151,8 @@ class ListViewRepo extends StatelessWidget {
                     width: 45,
                     height: 45,
                     child: Center(
-                      child: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Colors.blue,
-                      ),
+                      child: Icon(Icons.arrow_forward_ios,
+                          color: Theme.of(context).primaryColor),
                     ),
                   ),
                 ),
