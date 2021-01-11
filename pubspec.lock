@@ -156,7 +156,7 @@ packages:
     source: hosted
     version: "1.2.0-nullsafety.1"
   faker:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: faker
       url: "https://pub.dev"
@@ -202,6 +202,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
+  flutter_launcher_icons:
+    dependency: "direct dev"
+    description:
+      name: flutter_launcher_icons
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.8.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -290,7 +297,7 @@ packages:
     source: hosted
     version: "1.3.0-nullsafety.3"
   mockito:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: mockito
       url: "https://pub.dev"

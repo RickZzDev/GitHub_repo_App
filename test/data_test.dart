@@ -15,8 +15,6 @@ import 'package:mockito/mockito.dart';
 
 class HttpClientSpy extends Mock implements Requester {}
 
-// class HttpClientSpy extends Mock implements Requester {}
-
 void main() {
   Requester httpClient;
   String url;
@@ -24,9 +22,7 @@ void main() {
   HomeRepository homeRepository;
 
   setUp(() {
-    //Instanciamos a classe Mockada
     httpClient = HttpClientSpy();
-    //Criamos uma url fake com o Faker
     url = faker.internet.httpUrl();
     homeProvider = HomeProvider(requester: httpClient);
     homeRepository = HomeRepository(apiClient: homeProvider);
@@ -49,7 +45,6 @@ void main() {
   test(
     "Should call HomeProvider that will call a requester with correct values",
     () async {
-      //Action
       await homeProvider.getRepos();
       verify(
         httpClient.fetch(
@@ -63,7 +58,6 @@ void main() {
   test(
     "Should call HomeRepository that will call a HomeProvider",
     () async {
-      //Action
       await homeRepository.getRepos();
       verify(
         homeProvider.getRepos(),
