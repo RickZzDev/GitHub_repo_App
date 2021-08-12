@@ -8,8 +8,12 @@ class HomeProvider {
   HomeProvider({@required this.requester});
 
   getRepos() async {
-    var response = await requester.fetch(
-        url: GitEndpoints.publicRepos(), header: Headers.getBasicHeader());
-    return response;
+    try {
+      var response = await requester.fetch(
+          url: GitEndpoints.publicRepos(), header: Headers.getBasicHeader());
+      return response;
+    } catch (e) {
+      throw e;
+    }
   }
 }
